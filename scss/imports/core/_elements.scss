@@ -1,0 +1,38 @@
+.text_logo {
+    color: $color-logo;
+    width: 460px;
+    height: 70px;
+    font-size: 75px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 25px;
+    font-weight: bold;
+}
+
+.btnmore-arown {
+    display: flex;
+    border: 2px solid #ffff;
+    width: 250px;
+    height: 30px;
+    margin: auto;
+    align-items: center;
+}
+
+.btnmore {
+    margin: 0 auto;
+}
+
+.arown {
+    margin: 0 auto;
+}
+
+.img-arown {
+    width: 45px;
+}
+
+.btnmore a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 20px;
+}

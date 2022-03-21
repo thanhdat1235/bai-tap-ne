@@ -1,0 +1,41 @@
+.header {
+    background-color: #131416;
+    height: 60px;
+    position: relative;
+    top: 0;
+}
+
+.logo__menu__lang {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style-type: none;
+    display: -webkit-inline-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__content {
+    margin: 0 10px;
+}
+
+.menu__content a {
+    text-decoration: none;
+    color: #ffff;
+    margin: 0 34px;
+}
+
+.logo-img {
+    width: 180px;
+    height: 24px;
+}
+
+.lang-icon_down {
+    display: flex;
+}
+
+.lang {
+    color: #ffff;
+}
