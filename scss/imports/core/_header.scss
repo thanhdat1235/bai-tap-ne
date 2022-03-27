@@ -1,30 +1,35 @@
 .header {
-    background-color: #131416;
-    height: 60px;
-    position: relative;
     top: 0;
+    z-index: 100;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1));
+    .menu {
+        height: 100%;
+        list-style-type: none;
+        display: -webkit-inline-box;
+        margin: 0;
+        padding: 0;
+        >li {
+            height: 100%;
+            margin: 0 30px;
+            a {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                text-decoration: none;
+                color: #ffff;
+            }
+        }
+    }
 }
 
 .logo__menu__lang {
     display: flex;
+    height: 100%;
+    align-items: center;
     justify-content: space-between;
-}
-
-.menu {
-    list-style-type: none;
-    display: -webkit-inline-box;
-    margin: 0;
-    padding: 0;
-}
-
-.menu__content {
-    margin: 0 10px;
-}
-
-.menu__content a {
-    text-decoration: none;
-    color: #ffff;
-    margin: 0 34px;
 }
 
 .logo-img {
@@ -38,4 +43,83 @@
 
 .lang {
     color: #ffff;
+    margin: 0 10px;
+}
+
+.btnmenu {
+    margin-right: 50px;
+    margin-left: 10px;
+    display: none;
+    span {
+        &::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: $color-logo;
+            top: -10px;
+            display: block;
+        }
+        width: 40px;
+        height: 2px;
+        display: block;
+        background-color: $color-logo;
+        position: absolute;
+        top: 50%;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: $color-logo;
+            display: block;
+            top: 10px;
+        }
+    }
+}
+
+// Responsive
+@include sm {
+    .header {
+        .container-fluid {
+            .logo__menu__lang {
+                display: flex;
+                width: 100%;
+                .menu {
+                    display: none;
+                }
+                .lang__dropdown {
+                    width: 100%;
+                    .lang-icon_down {
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+                .btnmenu {
+                    span {
+                        width: 30px;
+                    }
+                    display: block
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .logo-img {
+        width: 120px;
+        height: 20px;
+    }
+    .menu,
+    .lang__dropdown {
+        font-size: 12px;
+    }
+}
+
+@include xxs {
+    .header {
+        max-width: 100vw;
+    }
 }

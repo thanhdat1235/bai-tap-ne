@@ -1,12 +1,13 @@
 .footer {
     background-color: black;
-    margin-top: 100px;
     height: 50px;
 }
 
 .footer .container {
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
 
 .btn-back a {

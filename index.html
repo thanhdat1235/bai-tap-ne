@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/dest/style.min.css" />
+    <link rel="stylesheet" href="./dest/fonts.css">
 </head>
 
 <body>
@@ -17,11 +18,11 @@
                     <a href="./"><img src="./img/logo@2x.png" alt="logo" class="logo-img" /></a>
                 </div>
                 <ul class="menu">
-                    <li class="menu__content"><a href="./">HOME</a></li>
-                    <li class="menu__content"><a href="./">PRODUCTS</a></li>
-                    <li class="menu__content"><a href="./">ABOUT</a></li>
-                    <li class="menu__content"><a href="./">GALLERY</a></li>
-                    <li class="menu__content"><a href="./">NEWS</a></li>
+                    <li><a href="./">HOME</a></li>
+                    <li><a href="./">PRODUCTS</a></li>
+                    <li><a href="./">ABOUT</a></li>
+                    <li><a href="./">GALLERY</a></li>
+                    <li><a href="./">NEWS</a></li>
                 </ul>
                 <div class="lang__dropdown">
                     <div class="lang-icon_down">
@@ -36,16 +37,18 @@
                         <option value="text">JP</option>
                     </div> -->
                 </div>
+                <div class="btnmenu">
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="slide1">
-            <div class="container">
+        <div class="slide">
+
+            <div class="slider-item-wrap">
                 <div class="text__btn">
-                    <div class="text_logo">WOODER
-                        <h1></h1>
-                    </div>
+                    <h1>WOODER</h1>
                     <div class="btnmore-arown">
                         <div class="btnmore">
                             <a href="#">LEARN MORE</a>
@@ -55,32 +58,31 @@
                         </div>
                     </div>
                 </div>
+                <img src="./img/slide1.jpg" alt="slide1" class="img-slide1">
             </div>
-            <div class="container-fluid">
-                <div class="page__mouse__btn">
-                    <div class="page-dot">
-                        <div class="page">01</div>
-                        <ul class="dot">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="mouse-arown">
-                        <img src="./img/mouse61@2x.png" alt="mouse" class="mouse">
-                        <img src="./img/line@2x.png" alt="line" class="line">
-                    </div>
-                    <div class="btn-prv-next">
-                        <button class="btn --prv" onclick="countSlides(-1)">
-                            <img src="./img/arrow@2x.png" alt="arown" class="img-arown">
-                        </button>
-                        <button class="btn --next" onclick="countSlides(1)">
-                            <img src="./img/arrow@2x.png" alt="arown" class="img-arown">
-                        </button>
-                    </div>
+            <div class="page__mouse__btn">
+                <div class="page-dot">
+                    <div class="page">01</div>
+                    <ul class="dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="mouse-arown">
+                    <img src="./img/mouse61@2x.png" alt="mouse" class="mouse">
+                    <img src="./img/line@2x.png" alt="line" class="line">
+                </div>
+                <div class="btn-prv-next">
+                    <button class="btn --prv" onclick="countSlides(-1)">
+                                <img src="./img/arrow@2x.png" alt="arown" class="img-arown">
+                            </button>
+                    <button class="btn --next" onclick="countSlides(1)">
+                                <img src="./img/arrow@2x.png" alt="arown" class="img-arown">
+                            </button>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="products">
             <div class="container">
                 <div class="products-content">
@@ -92,29 +94,29 @@
                             <p>Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood</p>
                             <div class="btnprd-arrow">
                                 <a href="#">LEARN MORE</a>
-                                <img src="./img/arrow@2x.png" alt="arown" class="img-arrowprd">
+                                <img src="./img/481127.png" alt="arown" class="img-arrowprd">
                             </div>
                         </div>
                     </div>
                     <div class="image-content">
-                        <img src="./img/upcycled-furniture-011.jpg" alt="furniture">
+                        <img src="./img/upcycled-furniture-011.jpg" alt="furniture" class="furniture">
                     </div>
                 </div>
-                <div class="products-content">
-                    <div class="image-content">
-                        <img src="./img/img.jpg" alt="decor">
-                    </div>
+                <div class="products-content --decor">
                     <div class="text-content-decor">
                         <div class="title-p-btn">
                             <div class="title-product">
                                 <h2>DECOR</h2>
                             </div>
-                            <p>We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable your premises. </p>
-                            <div class="btnprd-arrow">
-                                <a href="#">LEARN MORE</a>
-                                <img src="./img/arrow@2x.png" alt="arown" class="img-arrowprd">
-                            </div>
+                            <p class="text-decor">We make all types of wooden decor as per design given by Architect,Interior designer, contractor which is suitable your premises. </p>
                         </div>
+                        <div class="btnprd-arrow">
+                            <img src="./img/481127.png" alt="arown" class="img-arrowprd">
+                            <a class="aft-btn" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <img src="./img/img.jpg" alt="decor">
                     </div>
                 </div>
                 <div class="wooder-quality">
@@ -191,7 +193,7 @@
                         <p>We are a team of professionals in the wood processing and the creation of wooden furniture of the highest class.</p>
                         <div class="btnprd-arrow">
                             <a href="#">LEARN MORE</a>
-                            <img src="./img/arrow@2x.png" alt="arown" class="img-arrowprd">
+                            <img src="./img/481127.png" alt="arown" class="img-arrowprd">
                         </div>
                     </div>
                 </div>
@@ -223,7 +225,7 @@
                 <div class="imgnews-desc">
                     <div class="content">
                         <img src="./img/patrick-perkins-3wylDrjxH-E-unsplash-small.jpg" alt="patrick" class="patrick">
-                        <h3 style="height:42.3px">Where does it come from?</h3>
+                        <h3>Where does it come from?</h3>
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literatur...</p>
                     </div>
                     <div class="content">
